@@ -47,6 +47,7 @@
             this.lblMedia = new System.Windows.Forms.Label();
             this.lblEstand = new System.Windows.Forms.Label();
             this.lblTip = new System.Windows.Forms.Label();
+            this.lblModa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdEstadistica)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,11 +223,21 @@
             this.lblTip.TabIndex = 13;
             this.lblTip.Text = "TIPICA";
             // 
+            // lblModa
+            // 
+            this.lblModa.AutoSize = true;
+            this.lblModa.Location = new System.Drawing.Point(540, 477);
+            this.lblModa.Name = "lblModa";
+            this.lblModa.Size = new System.Drawing.Size(14, 13);
+            this.lblModa.TabIndex = 14;
+            this.lblModa.Text = "X";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 540);
+            this.Controls.Add(this.lblModa);
             this.Controls.Add(this.lblTip);
             this.Controls.Add(this.lblEstand);
             this.Controls.Add(this.lblMedia);
@@ -270,6 +281,7 @@
         private System.Windows.Forms.Label lblMedia;
         private System.Windows.Forms.Label lblEstand;
         private System.Windows.Forms.Label lblTip;
+        private System.Windows.Forms.Label lblModa;
     }
 }
 

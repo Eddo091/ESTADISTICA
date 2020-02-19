@@ -57,7 +57,10 @@ namespace programacionII_estadistica
                     fila.Cells["xixfi"].Value = (x1*f1).ToString();
                     fila.Cells["x2ixfi"].Value = ( Math.Pow(x1,2) * f1).ToString();
 
-                  
+                /*  for (contador = 0; contador < 10; contador++)
+                    {
+                        auxiliar[contador] = 0;
+                    }*/
 
 
                 }

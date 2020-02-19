@@ -29,5 +29,9 @@ namespace programacionII_estadistica
         {
             return Math.Sqrt(estandar(serie));
         }
+
+  
+        }
+
     }
 }

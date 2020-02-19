@@ -44,7 +44,7 @@
             this.lblToF1 = new System.Windows.Forms.Label();
             this.lblToX1F1 = new System.Windows.Forms.Label();
             this.lblToX2iF1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMedia = new System.Windows.Forms.Label();
             this.lblEstand = new System.Windows.Forms.Label();
             this.lblTip = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdEstadistica)).BeginInit();
@@ -180,7 +180,7 @@
             // lblToX1F1
             // 
             this.lblToX1F1.AutoSize = true;
-            this.lblToX1F1.Location = new System.Drawing.Point(247, 477);
+            this.lblToX1F1.Location = new System.Drawing.Point(281, 477);
             this.lblToX1F1.Name = "lblToX1F1";
             this.lblToX1F1.Size = new System.Drawing.Size(75, 13);
             this.lblToX1F1.TabIndex = 9;
@@ -189,25 +189,25 @@
             // lblToX2iF1
             // 
             this.lblToX2iF1.AutoSize = true;
-            this.lblToX2iF1.Location = new System.Drawing.Point(350, 477);
+            this.lblToX2iF1.Location = new System.Drawing.Point(410, 477);
             this.lblToX2iF1.Name = "lblToX2iF1";
             this.lblToX2iF1.Size = new System.Drawing.Size(78, 13);
             this.lblToX2iF1.TabIndex = 10;
             this.lblToX2iF1.Text = "TOTAL X2IxF1";
             // 
-            // label5
+            // lblMedia
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(36, 518);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "X";
+            this.lblMedia.AutoSize = true;
+            this.lblMedia.Location = new System.Drawing.Point(36, 518);
+            this.lblMedia.Name = "lblMedia";
+            this.lblMedia.Size = new System.Drawing.Size(14, 13);
+            this.lblMedia.TabIndex = 11;
+            this.lblMedia.Text = "X";
             // 
             // lblEstand
             // 
             this.lblEstand.AutoSize = true;
-            this.lblEstand.Location = new System.Drawing.Point(152, 518);
+            this.lblEstand.Location = new System.Drawing.Point(161, 518);
             this.lblEstand.Name = "lblEstand";
             this.lblEstand.Size = new System.Drawing.Size(66, 13);
             this.lblEstand.TabIndex = 12;
@@ -216,7 +216,7 @@
             // lblTip
             // 
             this.lblTip.AutoSize = true;
-            this.lblTip.Location = new System.Drawing.Point(247, 518);
+            this.lblTip.Location = new System.Drawing.Point(295, 518);
             this.lblTip.Name = "lblTip";
             this.lblTip.Size = new System.Drawing.Size(41, 13);
             this.lblTip.TabIndex = 13;
@@ -229,7 +229,7 @@
             this.ClientSize = new System.Drawing.Size(679, 540);
             this.Controls.Add(this.lblTip);
             this.Controls.Add(this.lblEstand);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblMedia);
             this.Controls.Add(this.lblToX2iF1);
             this.Controls.Add(this.lblToX1F1);
             this.Controls.Add(this.lblToF1);
@@ -267,7 +267,7 @@
         private System.Windows.Forms.Label lblToF1;
         private System.Windows.Forms.Label lblToX1F1;
         private System.Windows.Forms.Label lblToX2iF1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMedia;
         private System.Windows.Forms.Label lblEstand;
         private System.Windows.Forms.Label lblTip;
     }

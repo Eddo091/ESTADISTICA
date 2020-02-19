@@ -59,14 +59,22 @@ namespace programacionII_estadistica
 
                   
 
+
                 }
                 lblToF1.Text = sumaf1.ToString();
                 lblToX1F1.Text = sumaxifi.ToString();
                 lblToX2iF1.Text = suma2xixfi.ToString();
+                
+                double  media = sumaxifi / sumaf1, standar =   suma2xixfi/sumaf1 -   Math.Pow(media, 2), tipica =   Math.Sqrt(standar); 
 
 
+
+
+                lblMedia.Text = media.ToString();
+                lblEstand.Text = standar.ToString();
+                lblTip.Text = tipica.ToString();
             }
-            catch(Exception error) { 
+            catch(Exception error) {  
                 ///
             }
         }

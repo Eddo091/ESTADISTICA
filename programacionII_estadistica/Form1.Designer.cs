@@ -47,6 +47,7 @@
             this.lblmedia = new System.Windows.Forms.Label();
             this.lblestandar = new System.Windows.Forms.Label();
             this.lbltipica = new System.Windows.Forms.Label();
+            this.lblModa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdEstadistica)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +117,7 @@
             this.xixfi,
             this.x2ixfi});
             this.grdEstadistica.Location = new System.Drawing.Point(20, 94);
-            this.grdEstadistica.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.grdEstadistica.Margin = new System.Windows.Forms.Padding(1);
             this.grdEstadistica.Name = "grdEstadistica";
             this.grdEstadistica.RowHeadersWidth = 102;
             this.grdEstadistica.RowTemplate.Height = 40;
@@ -221,11 +222,21 @@
             this.lbltipica.TabIndex = 13;
             this.lbltipica.Text = "Tipica";
             // 
+            // lblModa
+            // 
+            this.lblModa.AutoSize = true;
+            this.lblModa.Location = new System.Drawing.Point(410, 421);
+            this.lblModa.Name = "lblModa";
+            this.lblModa.Size = new System.Drawing.Size(34, 13);
+            this.lblModa.TabIndex = 14;
+            this.lblModa.Text = "Moda";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 443);
+            this.ClientSize = new System.Drawing.Size(603, 468);
+            this.Controls.Add(this.lblModa);
             this.Controls.Add(this.lbltipica);
             this.Controls.Add(this.lblestandar);
             this.Controls.Add(this.lblmedia);
@@ -240,7 +251,9 @@
             this.Controls.Add(this.btnMediaAritmetica);
             this.Controls.Add(this.txtserie);
             this.Controls.Add(this.lblserie);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculos basicos Estadistica";
             ((System.ComponentModel.ISupportInitialize)(this.grdEstadistica)).EndInit();
             this.ResumeLayout(false);
@@ -269,6 +282,7 @@
         private System.Windows.Forms.Label lblmedia;
         private System.Windows.Forms.Label lblestandar;
         private System.Windows.Forms.Label lbltipica;
+        private System.Windows.Forms.Label lblModa;
     }
 }
 

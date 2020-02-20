@@ -39,47 +39,41 @@ namespace programacionII_estadistica
             try{
                 int nfilas = grdEstadistica.Rows.Count - 1,
                     sumaf1 = 0,
-                    sumaxifi = 0;
-                double    suma2xixfi = 0; 
-                    
+                    sumaxixfi = 0;
+                double sumax2ixfi = 0;
                 DataGridViewRow fila;
 
-                for (int i = 0; i < nfilas; i++)
-                {
+                for (int i = 0; i < nfilas; i++){
                     fila = grdEstadistica.Rows[i];
                     int x1 = int.Parse(fila.Cells["x1"].Value.ToString()),
                         f1 = int.Parse(fila.Cells["f1"].Value.ToString());
                     sumaf1 += f1;
-                    sumaxifi += x1 * f1;
-                    suma2xixfi += Math.Pow(x1, 2) * f1;
+                    sumaxixfi += x1 * f1;
+                    sumax2ixfi += Math.Pow(x1, 2) * f1;
 
                     fila.Cells["fi"].Value = sumaf1.ToString();
                     fila.Cells["xixfi"].Value = (x1*f1).ToString();
                     fila.Cells["x2ixfi"].Value = ( Math.Pow(x1,2) * f1).ToString();
-
-                /*  for (contador = 0; contador < 10; contador++)
-                    {
-                        auxiliar[contador] = 0;
-                    }*/
-
-
                 }
-                lblToF1.Text = sumaf1.ToString();
-                lblToX1F1.Text = sumaxifi.ToString();
-                lblToX2iF1.Text = suma2xixfi.ToString();
+                lbltotalf1.Text = sumaf1.ToString();
+                lbltotalxixfi.Text = sumaxixfi.ToString();
+                lbltotalx2ixfi.Text = sumax2ixfi.ToString();
+
+                double media = sumaxixfi / sumaf1,
+                    standar = sumax2ixfi / sumaf1 - Math.Pow(media,2),
+                    tipica = Math.Sqrt(standar);
+           
+                lblmedia.Text = media.ToString();
+                lblestandar.Text = standar.ToString();
+                lbltipica.Text = tipica.ToString();
+            }
+            catch(Exception error) { 
                 
-                double  media = sumaxifi / sumaf1, standar =   suma2xixfi/sumaf1 -   Math.Pow(media, 2), tipica =   Math.Sqrt(standar); 
-
-
-
-
-                lblMedia.Text = media.ToString();
-                lblEstand.Text = standar.ToString();
-                lblTip.Text = tipica.ToString();
             }
-            catch(Exception error) {  
-                ///
-            }
+        }
+        private void grdEstadistica_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

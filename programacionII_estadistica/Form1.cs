@@ -20,18 +20,38 @@ namespace programacionII_estadistica
 
         private void btnMediaAritmetica_Click(object sender, EventArgs e)
         {
-            //split => divide una cadena en base a un delimitador (patron) y devuelve una matriz
-            lblrespuesta.Text = "X="+ objEstadistica.media(txtserie.Text.Split(','));
+            try
+            { //split => divide una cadena en base a un delimitador (patron) y devuelve una matriz
+                lblrespuesta.Text = "X=" + objEstadistica.media(txtserie.Text.Split(','));
+            }
+            catch (Exception error) {
+                MessageBox.Show ("Numero no identificado"+ error.Message, "Media Aritmetica",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void btnCalcularEstandar_Click(object sender, EventArgs e)
         {
-            lblrespuesta.Text = "Estandar=" + objEstadistica.estandar(txtserie.Text.Split(','));
+            try { lblrespuesta.Text = "Estandar=" + objEstadistica.estandar(txtserie.Text.Split(',')); } catch (Exception error)
+            {
+                MessageBox.Show("Numero no identificado" + error.Message, "Media Estandar",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btnCalcularTpica_Click(object sender, EventArgs e)
         {
-            lblrespuesta.Text = "Tipica=" + objEstadistica.tipica(txtserie.Text.Split(','));
+            try
+            {
+                lblrespuesta.Text = "Tipica=" + objEstadistica.tipica(txtserie.Text.Split(','));
+            }
+            catch(Exception error) {
+                MessageBox.Show("Numero no identificado" + error.Message, "Tipica",
+MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void grdEstadistica_KeyUp(object sender, KeyEventArgs e)
@@ -88,8 +108,9 @@ namespace programacionII_estadistica
                 lbltipica.Text = tipica.ToString();
                 lblModa.Text = " Se repite " + count;
             }
-            catch(Exception error) { 
-                //
+            catch(Exception error) {
+                MessageBox.Show("Numero no identificado" + error.Message, "Estadistica",
+ MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void grdEstadistica_CellContentClick(object sender, DataGridViewCellEventArgs e)

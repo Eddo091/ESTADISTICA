@@ -42,6 +42,7 @@ namespace programacionII_estadistica
                     sumaxixfi = 0;
                 double sumax2ixfi = 0;
                    bool Moda;
+                int count = 0;
                 DataGridViewRow fila;
 
                 for (int i = 0; i < nfilas; i++){
@@ -55,20 +56,37 @@ namespace programacionII_estadistica
                     fila.Cells["fi"].Value = sumaf1.ToString();
                     fila.Cells["xixfi"].Value = (x1*f1).ToString();
                     fila.Cells["x2ixfi"].Value = ( Math.Pow(x1,2) * f1).ToString();
+                  
+                    //Moda
+                    
+                    if (x1 == f1)
+                    {
+                        count++;
+                        if (x1 != 0)
+                        {
+                            lblModa.Text = x1 + " Se repite "+ count;
+
+                        }
+                    }
+
                 }
+                 
+
                 lbltotalf1.Text = sumaf1.ToString();
                 lbltotalxixfi.Text = sumaxixfi.ToString();
                 lbltotalx2ixfi.Text = sumax2ixfi.ToString();
+                lblModa.Text = count.ToString();
 
                 double media = sumaxixfi / sumaf1,
                     standar = sumax2ixfi / sumaf1 - Math.Pow(media,2),
                     tipica = Math.Sqrt(standar);
-                Moda = x1 == f1;
+
+               
               
                 lblmedia.Text = media.ToString();
                 lblestandar.Text = standar.ToString();
                 lbltipica.Text = tipica.ToString();
-                lblModa.Text = "Se repite" + Moda;
+                lblModa.Text = " Se repite " + count;
             }
             catch(Exception error) { 
                 //

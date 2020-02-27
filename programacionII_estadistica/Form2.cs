@@ -39,6 +39,7 @@ namespace programacionII_estadistica
 
         private void conversoresToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+
             Estadistica.Hide();
             Conversor.MdiParent = this;
 

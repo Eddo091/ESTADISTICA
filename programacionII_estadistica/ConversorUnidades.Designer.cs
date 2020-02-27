@@ -97,7 +97,9 @@
             this.cboTipo.Items.AddRange(new object[] {
             "Monedas",
             "Longitud",
-            "Peso"});
+            "Peso",
+            "Volumen",
+            "Almacenamiento"});
             this.cboTipo.Location = new System.Drawing.Point(83, 29);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(121, 21);

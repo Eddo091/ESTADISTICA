@@ -61,7 +61,8 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
                     sumaf1 = 0,
                     sumaxixfi = 0;
                 double sumax2ixfi = 0;
-                  // bool Moda;
+                
+               
                 int count = 0;
                 DataGridViewRow fila;
 
@@ -76,17 +77,23 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
                     fila.Cells["fi"].Value = sumaf1.ToString();
                     fila.Cells["xixfi"].Value = (x1*f1).ToString();
                     fila.Cells["x2ixfi"].Value = ( Math.Pow(x1,2) * f1).ToString();
-                  
+
+                    //Aritmetica
+
+
+
+                    lblMediaArit.Text = "Media A: " + Math.Round(sumax2ixfi, 2);
+
                     //Moda
-                    
-                    if (x1 == f1)
+
+                    if ( sumaxixfi== sumax2ixfi)
                     {
                         count++;
-                        if (x1 != 0)
+                        if (sumaxixfi!= 0) 
                         {
-                            lblModa.Text = x1 + " Se repite "+ count;
+                            lblModa.Text = sumaxixfi  + " Se repite "+ count;
 
-                            
+                           
 
                         }
                     }
@@ -108,7 +115,8 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lblmedia.Text = media.ToString();
                 lblestandar.Text = standar.ToString();
                 lbltipica.Text = tipica.ToString();
-                lblModa.Text = " Se repite " + count;
+             lblModa.Text = " Se repite " + count;
+
             }
             catch(Exception error) {
                 MessageBox.Show("Numero no identificado" + error.Message, "Estadistica",

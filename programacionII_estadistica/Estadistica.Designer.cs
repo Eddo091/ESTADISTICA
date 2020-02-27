@@ -49,6 +49,7 @@
             this.lblestandar = new System.Windows.Forms.Label();
             this.lbltipica = new System.Windows.Forms.Label();
             this.lblModa = new System.Windows.Forms.Label();
+            this.lblMediaArit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdEstadistica)).BeginInit();
             this.SuspendLayout();
             // 
@@ -233,11 +234,21 @@
             this.lblModa.TabIndex = 14;
             this.lblModa.Text = "Moda";
             // 
+            // lblMediaArit
+            // 
+            this.lblMediaArit.AutoSize = true;
+            this.lblMediaArit.Location = new System.Drawing.Point(486, 421);
+            this.lblMediaArit.Name = "lblMediaArit";
+            this.lblMediaArit.Size = new System.Drawing.Size(85, 13);
+            this.lblMediaArit.TabIndex = 15;
+            this.lblMediaArit.Text = "Media Aritmetica";
+            // 
             // Estadistica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 468);
+            this.Controls.Add(this.lblMediaArit);
             this.Controls.Add(this.lblModa);
             this.Controls.Add(this.lbltipica);
             this.Controls.Add(this.lblestandar);
@@ -287,6 +298,7 @@
         private System.Windows.Forms.Label lblestandar;
         private System.Windows.Forms.Label lbltipica;
         private System.Windows.Forms.Label lblModa;
+        private System.Windows.Forms.Label lblMediaArit;
     }
 }
 

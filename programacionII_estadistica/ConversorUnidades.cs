@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace programacionII_estadistica
 {
@@ -46,6 +47,7 @@ namespace programacionII_estadistica
             catch (Exception ex)
             {
                 errorProvider1.SetError(txtCantidad, "Por favor digite la cantidad");
+                SystemSounds.Exclamation.Play();
                 //MessageBox.Show("Ingrese los valores correspondiente.","Conversores",
                 //   MessageBoxButtons.OK,MessageBoxIcon.Error);
             }

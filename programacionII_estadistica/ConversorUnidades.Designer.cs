@@ -91,6 +91,7 @@
             // 
             // cboTipo
             // 
+            this.cboTipo.AccessibleDescription = "";
             this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cboTipo.FormattingEnabled = true;
@@ -103,7 +104,7 @@
             this.cboTipo.Location = new System.Drawing.Point(83, 29);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(121, 21);
-            this.cboTipo.TabIndex = 5;
+            this.cboTipo.TabIndex = 0;
             this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
             // cboDe
@@ -114,7 +115,7 @@
             this.cboDe.Location = new System.Drawing.Point(12, 93);
             this.cboDe.Name = "cboDe";
             this.cboDe.Size = new System.Drawing.Size(121, 21);
-            this.cboDe.TabIndex = 6;
+            this.cboDe.TabIndex = 1;
             // 
             // cboA
             // 
@@ -124,14 +125,14 @@
             this.cboA.Location = new System.Drawing.Point(166, 93);
             this.cboA.Name = "cboA";
             this.cboA.Size = new System.Drawing.Size(121, 21);
-            this.cboA.TabIndex = 7;
+            this.cboA.TabIndex = 2;
             // 
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(104, 141);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidad.TabIndex = 8;
+            this.txtCantidad.TabIndex = 3;
             // 
             // BtnConvertir
             // 
@@ -139,7 +140,7 @@
             this.BtnConvertir.Location = new System.Drawing.Point(114, 201);
             this.BtnConvertir.Name = "BtnConvertir";
             this.BtnConvertir.Size = new System.Drawing.Size(75, 23);
-            this.BtnConvertir.TabIndex = 9;
+            this.BtnConvertir.TabIndex = 4;
             this.BtnConvertir.Text = "Convertir";
             this.BtnConvertir.UseVisualStyleBackColor = true;
             this.BtnConvertir.Click += new System.EventHandler(this.BtnConvertir_Click);

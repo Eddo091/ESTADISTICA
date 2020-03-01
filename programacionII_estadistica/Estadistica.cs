@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;
 namespace programacionII_estadistica
 {
     public partial class Estadistica : Form
@@ -23,20 +23,30 @@ namespace programacionII_estadistica
             try
             { //split => divide una cadena en base a un delimitador (patron) y devuelve una matriz
                 lblrespuesta.Text = "X=" + objEstadistica.media(txtserie.Text.Split(','));
+                errorProvider1.SetError(txtserie, "");
             }
             catch (Exception error) {
-                MessageBox.Show ("Numero no identificado"+ error.Message, "Media Aritmetica",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                errorProvider1.SetError(txtserie, "Por favor digite la cantidad");
+                SystemSounds.Exclamation.Play();
+               // MessageBox.Show ("Numero no identificado"+ error.Message, "Media Aritmetica",
+                 //   MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
 
         private void btnCalcularEstandar_Click(object sender, EventArgs e)
         {
-            try { lblrespuesta.Text = "Estandar=" + objEstadistica.estandar(txtserie.Text.Split(',')); } catch (Exception error)
+            try { lblrespuesta.Text = "Estandar=" + objEstadistica.estandar(txtserie.Text.Split(','));
+                errorProvider1.SetError(txtserie, "");
+
+            }
+            catch (Exception error)
+
             {
-                MessageBox.Show("Numero no identificado" + error.Message, "Media Estandar",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                errorProvider1.SetError(txtserie, "Por favor digite la cantidad");
+                SystemSounds.Exclamation.Play();
+                //MessageBox.Show("Numero no identificado" + error.Message, "Media Estandar",
+                //  MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -46,10 +56,13 @@ namespace programacionII_estadistica
             try
             {
                 lblrespuesta.Text = "Tipica=" + objEstadistica.tipica(txtserie.Text.Split(','));
+                errorProvider1.SetError(txtserie, "");
             }
             catch(Exception error) {
-                MessageBox.Show("Numero no identificado" + error.Message, "Tipica",
-MessageBoxButtons.OK, MessageBoxIcon.Error);
+                errorProvider1.SetError(txtserie, "Por favor digite la cantidad");
+                SystemSounds.Exclamation.Play();
+                // MessageBox.Show("Numero no identificado" + error.Message, "Tipica",
+                // MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estadistica));
             this.lblserie = new System.Windows.Forms.Label();
             this.txtserie = new System.Windows.Forms.TextBox();
@@ -50,7 +51,9 @@
             this.lbltipica = new System.Windows.Forms.Label();
             this.lblModa = new System.Windows.Forms.Label();
             this.lblMediaArit = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.grdEstadistica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblserie
@@ -72,7 +75,7 @@
             // 
             // btnMediaAritmetica
             // 
-            this.btnMediaAritmetica.Location = new System.Drawing.Point(255, 12);
+            this.btnMediaAritmetica.Location = new System.Drawing.Point(282, 12);
             this.btnMediaAritmetica.Name = "btnMediaAritmetica";
             this.btnMediaAritmetica.Size = new System.Drawing.Size(79, 32);
             this.btnMediaAritmetica.TabIndex = 2;
@@ -91,7 +94,7 @@
             // 
             // btnCalcularEstandar
             // 
-            this.btnCalcularEstandar.Location = new System.Drawing.Point(340, 12);
+            this.btnCalcularEstandar.Location = new System.Drawing.Point(367, 12);
             this.btnCalcularEstandar.Name = "btnCalcularEstandar";
             this.btnCalcularEstandar.Size = new System.Drawing.Size(105, 32);
             this.btnCalcularEstandar.TabIndex = 4;
@@ -101,7 +104,7 @@
             // 
             // btnCalcularTpica
             // 
-            this.btnCalcularTpica.Location = new System.Drawing.Point(451, 12);
+            this.btnCalcularTpica.Location = new System.Drawing.Point(478, 12);
             this.btnCalcularTpica.Name = "btnCalcularTpica";
             this.btnCalcularTpica.Size = new System.Drawing.Size(86, 32);
             this.btnCalcularTpica.TabIndex = 5;
@@ -243,6 +246,10 @@
             this.lblMediaArit.TabIndex = 15;
             this.lblMediaArit.Text = "Media Aritmetica";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Estadistica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +278,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculos basicos (Estadistica)";
             ((System.ComponentModel.ISupportInitialize)(this.grdEstadistica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,6 +307,7 @@
         private System.Windows.Forms.Label lbltipica;
         private System.Windows.Forms.Label lblModa;
         private System.Windows.Forms.Label lblMediaArit;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

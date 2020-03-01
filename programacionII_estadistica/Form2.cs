@@ -51,12 +51,18 @@ namespace programacionII_estadistica
         private void Form2_Load(object sender, EventArgs e)
         {
             
-            lblStatusFecha.Text = DateTime.Now.ToString();
+            
         }
 
         private void lblFormularioActivo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void horafecha_Tick(object sender, EventArgs e)
+        {
+            lblStatusFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToLongTimeString();   
         }
     }
 

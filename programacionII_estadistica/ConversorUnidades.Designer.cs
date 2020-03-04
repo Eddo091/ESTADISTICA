@@ -47,6 +47,7 @@
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
+            this.lblTipo.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblTipo.Location = new System.Drawing.Point(126, 9);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(28, 13);
@@ -56,6 +57,7 @@
             // lblDe
             // 
             this.lblDe.AutoSize = true;
+            this.lblDe.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblDe.Location = new System.Drawing.Point(35, 66);
             this.lblDe.Name = "lblDe";
             this.lblDe.Size = new System.Drawing.Size(21, 13);
@@ -65,7 +67,8 @@
             // lblA
             // 
             this.lblA.AutoSize = true;
-            this.lblA.Location = new System.Drawing.Point(204, 66);
+            this.lblA.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblA.Location = new System.Drawing.Point(219, 66);
             this.lblA.Name = "lblA";
             this.lblA.Size = new System.Drawing.Size(14, 13);
             this.lblA.TabIndex = 2;
@@ -83,6 +86,7 @@
             // lblRespuesta
             // 
             this.lblRespuesta.AutoSize = true;
+            this.lblRespuesta.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblRespuesta.Location = new System.Drawing.Point(219, 144);
             this.lblRespuesta.Name = "lblRespuesta";
             this.lblRespuesta.Size = new System.Drawing.Size(13, 13);
@@ -97,9 +101,6 @@
             this.cboTipo.FormattingEnabled = true;
             this.cboTipo.Items.AddRange(new object[] {
             "Monedas",
-            "Longitud",
-            "Peso",
-            "Volumen",
             "Almacenamiento"});
             this.cboTipo.Location = new System.Drawing.Point(83, 29);
             this.cboTipo.Name = "cboTipo";
@@ -153,7 +154,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::programacionII_estadistica.Properties.Resources.descargar;
             this.ClientSize = new System.Drawing.Size(306, 252);
             this.Controls.Add(this.BtnConvertir);
             this.Controls.Add(this.txtCantidad);

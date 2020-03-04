@@ -23,5 +23,6 @@ namespace programacionII_estadistica
         {
             return valores[opcion][a] / valores[opcion][de] * cantidad;
         }
+        //LISTO
     }
 }
